@@ -35,11 +35,10 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 ![Screenshot 2024-02-15 113828](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/68727300-88f7-4517-965c-8781c73d6037)
 
     * Balanced Accuracy Score : 0.994180571103648
-    * Precision for healthy and unhealthy loans is 99%.
-    * Recall for healthy and unhealthy loans is 99%.
+    * Precision for both healthy and unhealthy loans is 99%.
+    * Recall for both healthy and unhealthy loans is 99%.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+The Logistic Regression model with OverSampled data performed much better than the model with imbalanced data. The OverSampled data generated a higher accuracy score and a higher recall giving the confidence to produce less mistakes.  This model will help a lending company to make better decisions with the approval process.  According to the confusion matrices, the number of False Postives drastically decreases indicating the model will classify healthy & non-healthy loans correctly. Based off of this analysis, I would recommend using Model 2 (Logistic Regression Model fitted with Balanced (oversampled) data.
+
