@@ -10,8 +10,7 @@ Upon reviewing the data I determined loan status to be the target variable and s
 
 Next I split the data into training and testing datasets by using train_test_split from sklearn.model_selection.  Then I checked the shape of X_train to see the full size of the data.  It returned (58152, 7).  Then I created a logistic regression model with the original data. Then the score of the model was determined.
 
-Training Data Score: 0.9914878250103177
-Testing Data Score: 0.9924164259182832
+![Screenshot 2024-02-15 113332](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/f23e5686-9e25-4162-bc56-40b38c4c3654)
 
 After reviewing the testing scores predictions were made using the testing data. Last, I evaluated the model's performance by calculating the accuracy score of the model, generating a confusion matrix and then printing the classification report.
 
