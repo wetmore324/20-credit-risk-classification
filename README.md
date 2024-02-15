@@ -40,5 +40,5 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 
 ## Summary
 
-The Logistic Regression model with OverSampled data performed much better than the model with imbalanced data. The OverSampled data generated a higher accuracy score and a higher recall giving the confidence to produce less mistakes.  This model will help a lending company to make better decisions with the approval process.  According to the confusion matrices, the number of False Postives drastically decreases indicating the model will classify healthy & non-healthy loans correctly. Based off of this analysis, I would recommend using Model 2 (Logistic Regression Model fitted with Balanced (oversampled) data.
+The Logistic Regression model with OverSampled data performed much better than the model with imbalanced data. The OverSampled data generated a higher accuracy score and a higher recall giving the confidence to produce less mistakes.  This model will help a lending company to make better decisions with the approval process.  According to the confusion matrices, the number of False Postives drastically decreases indicating the model will classify healthy & non-healthy loans correctly. Based off of this analysis, I would recommend using Model 2 Logistic Regression Model fitted with Balanced (oversampled) data.
 
