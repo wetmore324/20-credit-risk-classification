@@ -32,7 +32,6 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 
    0 (healthy loan)          1.00      1.00      1.00     18759
    1 (unhealthy loan)        0.87      0.89      0.88       625
-
               accuracy                           0.99     19384
              macro avg       0.94      0.94      0.94     19384
           weighted avg       0.99      0.99      0.99     19384
@@ -49,7 +48,6 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 
     0 (healthy loan)         0.99      0.99      0.99     56277
     1 (unhealthy loan)       0.99      0.99      0.99     56277
-
               accuracy                           0.99    112554
              macro avg       0.99      0.99      0.99    112554
           weighted avg       0.99      0.99      0.99    112554
