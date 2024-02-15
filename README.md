@@ -16,8 +16,7 @@ After reviewing the testing scores predictions were made using the testing data.
 
 Upon evaluating the model's performance it was found necessary to predict a logistic regression model with resampled training data.  I used the RandomOverSampler module from the imbalanced-learn library to resample the data.  I then determined the distinct values of the sampled labels data by using numpy and calling np.unique(y_resampled, return_counts=True).  This gave the following result.
 
-ReSampled Labels:  [0 1]
-Label Counts:  [56277 56277]
+![Screenshot 2024-02-15 113556](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/28b703b1-674e-46ec-9dff-ec680972ddc6)
 
 With this resampling it shows equal data from the healthy and unhealthy loans.  Once the data was resampled I then used the logistic regression classifier and fit it to the sampled data which allowed predictions to be made.  Once completed I was able to evaluate the accuracy score, generate a confusion matrix and print the classification report.
 
@@ -25,32 +24,16 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 
 * Machine Learning Model 1: Logistic Regression Model
   
-Classification Report
-              precision    recall  f1-score   support
+![Screenshot 2024-02-15 113651](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/0277cd16-af5f-4550-bf7a-62f34cd7509c)
 
-           0       1.00      1.00      1.00     18759
-           1       0.87      0.89      0.88       625
-
-    accuracy                           0.99     19384
-   macro avg       0.94      0.94      0.94     19384
-weighted avg       0.99      0.99      0.99     19384
-
-**Balanced Accuracy Score : 0.9442676901753825
-**Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
-**Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
+** Balanced Accuracy Score : 0.9442676901753825
+** Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
+** Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
 
 
 * Machine Learning Model 2: Logistic Regression Model utilizing RandomOverSampler
   
-Classification Report
-              precision    recall  f1-score   support
-
-           0       0.99      0.99      0.99     56277
-           1       0.99      0.99      0.99     56277
-
-    accuracy                           0.99    112554
-   macro avg       0.99      0.99      0.99    112554
-weighted avg       0.99      0.99      0.99    112554
+![Screenshot 2024-02-15 113828](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/68727300-88f7-4517-965c-8781c73d6037)
 
 **Balanced Accuracy Score : 0.994180571103648
 **Precision for healthy and unhealthy loans is 99%.
