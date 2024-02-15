@@ -26,18 +26,18 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
   
 ![Screenshot 2024-02-15 113651](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/0277cd16-af5f-4550-bf7a-62f34cd7509c)
 
-** Balanced Accuracy Score : 0.9442676901753825
-** Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
-** Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
+* Balanced Accuracy Score : 0.9442676901753825
+* Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
+* Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
 
 
 * Machine Learning Model 2: Logistic Regression Model utilizing RandomOverSampler
   
 ![Screenshot 2024-02-15 113828](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/68727300-88f7-4517-965c-8781c73d6037)
 
-**Balanced Accuracy Score : 0.994180571103648
-**Precision for healthy and unhealthy loans is 99%.
-**Recall for healthy and unhealthy loans is 99%.
+*Balanced Accuracy Score : 0.994180571103648
+*Precision for healthy and unhealthy loans is 99%.
+*Recall for healthy and unhealthy loans is 99%.
 
 ## Summary
 
