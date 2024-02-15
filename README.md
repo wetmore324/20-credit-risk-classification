@@ -9,39 +9,57 @@ loan_status
 0  75036
 1   2500
 
-Next I split the data into training and testing datasets by using train_test_split from sklearn.model_selection.  Then I checked the shape of X_train to see the full size of the data.  It returned (58152, 7).  Then I created a logistic regression model with the original data.  With this model I used the max_iter=200 due to the volume of the dataset.  Then the score of the model was determined.
+Next I split the data into training and testing datasets by using train_test_split from sklearn.model_selection.  Then I checked the shape of X_train to see the full size of the data.  It returned (58152, 7).  Then I created a logistic regression model with the original data. Then the score of the model was determined.
 
 Training Data Score: 0.9914878250103177
 Testing Data Score: 0.9924164259182832
 
 After reviewing the testing scores predictions were made using the testing data. Last, I evaluated the model's performance by calculating the accuracy score of the model, generating a confusion matrix and then printing the classification report.
 
-## Results
+Upon evaluating the model's performance it was found necessary to predict a logistic regression model with resampled training data.  I used the RandomOverSampler module from the imbalanced-learn library to resample the data.  I then determined the distinct values of the sampled labels data by using numpy and calling np.unique(y_resampled, return_counts=True).  This gave the following result.
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+ReSampled Labels:  [0 1]
+Label Counts:  [56277 56277]
+
+With this resampling it shows equal data from the healthy and unhealthy loans.  Once the data was resampled I then used the logistic regression classifier and fit it to the sampled data which allowed predictions to be made.  Once completed I was able to evaluate the accuracy score, generate a confusion matrix and print the classification report.
+
+## Results
 
 * Machine Learning Model 1: Logistic Regression Model
   
-  * Balanced Accuracy Score : 0.9442676901753825
-          **Classification Report**
-                                precision    recall  f1-score   support
+   **Classification Report**
+                        precision    recall  f1-score   support
 
-           0 (healthy loan)          1.00      1.00      1.00     18759
-           1 (unhealthy loan)        0.87      0.89      0.88       625
+   0 (healthy loan)          1.00      1.00      1.00     18759
+   1 (unhealthy loan)        0.87      0.89      0.88       625
 
-                      accuracy                           0.99     19384
-                     macro avg       0.94      0.94      0.94     19384
-                  weighted avg       0.99      0.99      0.99     19384
+              accuracy                           0.99     19384
+             macro avg       0.94      0.94      0.94     19384
+          weighted avg       0.99      0.99      0.99     19384
+
+            **Balanced Accuracy Score : 0.9442676901753825
+            **Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
+            **Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
 
 
+* Machine Learning Model 2: Logistic Regression Model utilizing RandomOverSampler
+  
+    **Classification Report**
+                        precision    recall  f1-score   support
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+    0 (healthy loan)         0.99      0.99      0.99     56277
+    1 (unhealthy loan)       0.99      0.99      0.99     56277
+
+              accuracy                           0.99    112554
+             macro avg       0.99      0.99      0.99    112554
+          weighted avg       0.99      0.99      0.99    112554
+
+            **Balanced Accuracy Score : 0.994180571103648
+            **Precision for healthy and unhealthy loans is 99%.
+            **Recall for healthy and unhealthy loans is 99%.
 
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
