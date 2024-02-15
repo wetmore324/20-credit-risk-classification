@@ -7,7 +7,6 @@ In this Challenge, I used various techniques to train and evaluate a model based
 Upon reviewing the data I determined loan status to be the target variable and seperated the data into labels and features.  From here I used y.value_counts() to check the balance of the target values.  This returned the following:
 ![image](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/4fd12e00-3962-45d8-b41a-4ad1ea0fea96)
 
-
 Next I split the data into training and testing datasets by using train_test_split from sklearn.model_selection.  Then I checked the shape of X_train to see the full size of the data.  It returned (58152, 7).  Then I created a logistic regression model with the original data. Then the score of the model was determined.
 
 ![Screenshot 2024-02-15 113332](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/f23e5686-9e25-4162-bc56-40b38c4c3654)
@@ -25,7 +24,6 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 * Machine Learning Model 1: Logistic Regression Model
   
 ![Screenshot 2024-02-15 113651](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/0277cd16-af5f-4550-bf7a-62f34cd7509c)
-
     * Balanced Accuracy Score : 0.9442676901753825
     * Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
     * Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
@@ -34,7 +32,6 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 * Machine Learning Model 2: Logistic Regression Model utilizing RandomOverSampler
   
 ![Screenshot 2024-02-15 113828](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/68727300-88f7-4517-965c-8781c73d6037)
-
     * Balanced Accuracy Score : 0.994180571103648
     * Precision for healthy and unhealthy loans is 99%.
     * Recall for healthy and unhealthy loans is 99%.
