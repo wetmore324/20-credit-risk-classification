@@ -27,34 +27,36 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 
 * Machine Learning Model 1: Logistic Regression Model
   
-   **Classification Report**
-  
-                        precision    recall  f1-score   support
-   0 (healthy loan)          1.00      1.00      1.00     18759
-   1 (unhealthy loan)        0.87      0.89      0.88       625
-              accuracy                           0.99     19384
-             macro avg       0.94      0.94      0.94     19384
-          weighted avg       0.99      0.99      0.99     19384
+Classification Report
+              precision    recall  f1-score   support
 
-            **Balanced Accuracy Score : 0.9442676901753825
-            **Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
-            **Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
+           0       1.00      1.00      1.00     18759
+           1       0.87      0.89      0.88       625
+
+    accuracy                           0.99     19384
+   macro avg       0.94      0.94      0.94     19384
+weighted avg       0.99      0.99      0.99     19384
+
+**Balanced Accuracy Score : 0.9442676901753825
+**Precision for healthy loan is 100% while precision for unhealthy loan is 87%.
+**Recall for healthy loan is 100% while recall for unhealthy loan is 89%.
 
 
 * Machine Learning Model 2: Logistic Regression Model utilizing RandomOverSampler
   
-    **Classification Report**
-  
-                        precision    recall  f1-score   support
-    0 (healthy loan)         0.99      0.99      0.99     56277
-    1 (unhealthy loan)       0.99      0.99      0.99     56277
-              accuracy                           0.99    112554
-             macro avg       0.99      0.99      0.99    112554
-          weighted avg       0.99      0.99      0.99    112554
+Classification Report
+              precision    recall  f1-score   support
 
-            **Balanced Accuracy Score : 0.994180571103648
-            **Precision for healthy and unhealthy loans is 99%.
-            **Recall for healthy and unhealthy loans is 99%.
+           0       0.99      0.99      0.99     56277
+           1       0.99      0.99      0.99     56277
+
+    accuracy                           0.99    112554
+   macro avg       0.99      0.99      0.99    112554
+weighted avg       0.99      0.99      0.99    112554
+
+**Balanced Accuracy Score : 0.994180571103648
+**Precision for healthy and unhealthy loans is 99%.
+**Recall for healthy and unhealthy loans is 99%.
 
 ## Summary
 
