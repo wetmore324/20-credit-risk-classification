@@ -28,6 +28,7 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 * Machine Learning Model 1: Logistic Regression Model
   
    **Classification Report**
+  
                         precision    recall  f1-score   support
 
    0 (healthy loan)          1.00      1.00      1.00     18759
@@ -44,6 +45,7 @@ With this resampling it shows equal data from the healthy and unhealthy loans.  
 * Machine Learning Model 2: Logistic Regression Model utilizing RandomOverSampler
   
     **Classification Report**
+  
                         precision    recall  f1-score   support
 
     0 (healthy loan)         0.99      0.99      0.99     56277
