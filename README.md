@@ -5,9 +5,8 @@
 In this Challenge, I used various techniques to train and evaluate a model based on loan risk. I used a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers. The data included was loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, total debt and loan status.
 
 Upon reviewing the data I determined loan status to be the target variable and seperated the data into labels and features.  From here I used y.value_counts() to check the balance of the target values.  This returned the following:
-loan_status
-0  75036
-1   2500
+![image](https://github.com/wetmore324/20-credit-risk-classification/assets/136288855/4fd12e00-3962-45d8-b41a-4ad1ea0fea96)
+
 
 Next I split the data into training and testing datasets by using train_test_split from sklearn.model_selection.  Then I checked the shape of X_train to see the full size of the data.  It returned (58152, 7).  Then I created a logistic regression model with the original data. Then the score of the model was determined.
 
